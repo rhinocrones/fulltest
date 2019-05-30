@@ -44,8 +44,14 @@ dependencies {
 	testCompile('org.spockframework:spock-spring:1.2-groovy-2.4')
 }
 
+
+
 dependencyManagement {
 	imports {
 		mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
 	}
+}
+
+plugins {
+    id "org.sonarqube" version "2.7"
 }
